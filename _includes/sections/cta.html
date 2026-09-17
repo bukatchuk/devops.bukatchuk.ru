@@ -1,0 +1,9 @@
+{%- assign d = site.data.cta -%}
+<section class="cta" id="b14">
+  <div class="wrap">
+    <span class="blk rv" style="background:var(--ink)">{{ d.blk }}</span>
+    <h2 class="rv">{{ d.title }}</h2>
+    <p class="rv">{{ d.text }}</p>
+    <div class="btns rv" style="justify-content:center"><a class="btn" href="{{ d.button.href }}">{{ d.button.text_html }}</a></div>
+  </div>
+</section>

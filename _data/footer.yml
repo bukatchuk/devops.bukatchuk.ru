@@ -1,0 +1,26 @@
+# Раздел «footer»
+columns:
+  - title: "Курс"
+    html: "<p><a href=\"#b4\">Что входит</a><br><a href=\"#b6\">Год по шагам</a><br><a href=\"#b10\">Гарантии</a><br><a href=\"#b13\">Тарифы</a></p>"
+  - title: "Автор"
+    html: "<p><a href=\"https://habr.com/ru/articles/1078876/\" target=\"_blank\" rel=\"noopener\">Разбор аварии на Хабре</a><br><a href=\"https://github.com/olegbukatchuk\" target=\"_blank\" rel=\"noopener\">github.com/olegbukatchuk</a><br><a href=\"https://t.me/bukatchuk\" target=\"_blank\" rel=\"noopener\">t.me/bukatchuk</a></p>"
+  - title: "Документы"
+    html: "<p><a href=\"#\" class=\"ph\">[ОФЕРТА]</a><br><a href=\"#\" class=\"ph\">[ПОЛИТИКА ПЕРСОНАЛЬНЫХ ДАННЫХ]</a><br><span class=\"ph\">[ИП / ИНН]</span></p>"
+  - title: "Начать"
+    html: "<p>Подписка 5 000 ₽/мес.<br>Первый месяц возвращается по одному сообщению.</p><a class=\"btn btn--primary\" style=\"margin-top:.9rem;padding:.8rem 1.4rem\" href=\"#b8\">Оформить</a>"
+requisites_title: "Реквизиты продавца"
+requisites:
+  - label: "Продавец"
+    value: "<span class=\"ph\">[ИП, ФИО ПОЛНОСТЬЮ]</span>"
+  - label: "ИНН"
+    value: "<span class=\"ph\">[ИНН]</span>"
+  - label: "ОГРНИП"
+    value: "<span class=\"ph\">[ОГРНИП]</span>"
+  - label: "Почта"
+    value: "<span class=\"ph\">[EMAIL]</span>"
+  - label: "Документы"
+    value: "<a href=\"#\" class=\"ph\">[ОФЕРТА]</a> · <a href=\"#\" class=\"ph\">[ПОЛИТИКА ПЕРСОНАЛЬНЫХ ДАННЫХ]</a>"
+copyright: "Олег Букатчук"
+bottom:
+  - "Структура — 15 блоков упаковки (урок 2.5)"
+  - "Дизайн по мотивам Axis Industrial"

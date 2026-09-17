@@ -1,0 +1,16 @@
+# Раздел «ticker». Правится здесь, разметку трогать не нужно.
+items:
+  - "LINUX"
+  - "GIT"
+  - "BASH"
+  - "СЕТИ ОТ КАДРА ДО HTTPS"
+  - "PYTHON ДЛЯ ЭКСПЛУАТАЦИИ"
+  - "POSTGRESQL · REDIS · ОЧЕРЕДИ"
+  - "DOCKER"
+  - "CI/CD"
+  - "ANSIBLE"
+  - "TERRAFORM"
+  - "KUBERNETES"
+  - "НАБЛЮДАЕМОСТЬ"
+  - "SRE"
+  - "DEVSECOPS"

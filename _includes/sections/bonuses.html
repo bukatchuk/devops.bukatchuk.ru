@@ -1,0 +1,25 @@
+{%- assign d = site.data.bonuses -%}
+<section>
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <div class="sec__head">
+      <div><h2 class="rv">{{ d.title_html }}</h2></div>
+      <p class="rv">{{ d.lead }}</p>
+    </div>
+    <div class="feats">
+      {%- for f in d.items %}
+      <div class="feat{% if f.variant == 'dark' %} feat--dark{% endif %}{% if f.variant == 'safety' %} feat--safety{% endif %} rv">
+        <div>
+          <div class="feat__id">{{ f.id }}</div>
+          <h3>{{ f.title_html }}</h3>
+          <p class="feat__x">{{ f.text }}</p>
+          {%- if f.bullets %}<ul>{% for b in f.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}
+        </div>
+        {%- if f.result %}
+        <div class="feat__res"><strong>Результат:</strong> {{ f.result }}{% if f.anchor %}<div class="feat__anchor">{{ f.anchor }}</div>{% endif %}</div>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

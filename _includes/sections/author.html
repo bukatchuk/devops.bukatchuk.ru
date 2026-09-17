@@ -1,0 +1,15 @@
+{%- assign d = site.data.author -%}
+<section id="author" class="sec--surface sec--line">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><div class="eyebrow rv">{{ d.eyebrow }}</div><h2 class="rv">{{ d.title_html }}</h2></div>
+      <p class="rv">{{ d.lead }}</p>
+    </div>
+    <div class="proof">
+      {%- for p in d.proof %}
+      <div class="proof__i rv"><b>{{ p.title }}</b>{{ p.html }}</div>
+      {%- endfor %}
+    </div>
+    <div class="honest rv" data-label="{{ d.honest.label }}"><div class="cal__body">{{ d.honest.html }}</div></div>
+  </div>
+</section>

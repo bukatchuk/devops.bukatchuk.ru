@@ -1,0 +1,61 @@
+# Раздел «tariffs»
+blk: "Тарифы"
+title_html: "Три варианта"
+lead: ""
+cards:
+  - tag: "Подписка · целевой"
+    price: "5 000 ₽"
+    note: "в месяц · отменить можно в любой момент"
+    items:
+      - text: "Все 20 блоков и 197 уроков"
+        strike: false
+      - text: "Практика в трёх средах"
+        strike: false
+      - text: "Фиксация цены навсегда"
+        strike: false
+      - text: "Возврат за первый месяц по сообщению"
+        strike: false
+      - text: "Вернулись за 3 месяца — цена та же"
+        strike: false
+    who: "Тем, кто учится сам и хочет платить по месяцу"
+    button:
+      text_html: "Оформить <span class=\"ph\" style=\"color:#fff\">[ССЫЛКА]</span>"
+      href: "#"
+      primary: true
+    highlight: true
+  - tag: "Доступ навсегда"
+    price: "50 000 ₽"
+    note: "единоразово · цена десяти месяцев"
+    items:
+      - text: "Всё то же самое, без ежемесячных платежей"
+        strike: false
+      - text: "Новые материалы навсегда, без доплаты"
+        strike: false
+      - text: "Возврат в течение 14 дней"
+        strike: false
+      - text: "Фиксация цены не требуется"
+        strike: true
+    who: "Тем, кто не хочет считать месяцы"
+    button:
+      text_html: "Купить <span class=\"ph\">[ССЫЛКА]</span>"
+      href: "#"
+      primary: false
+    highlight: false
+  - tag: "Для команды"
+    price: "от 1 500 ₽"
+    note: "за место в месяц · минимум 5 мест"
+    items:
+      - text: "Доступ на всю команду"
+        strike: false
+      - text: "Отчёт о прохождении для руководителя"
+        strike: false
+      - text: "Порядок входа для нового сотрудника"
+        strike: false
+      - text: "Счёт, договор, акт, обмен через ЭДО"
+        strike: false
+    who: "Тимлидам, которые подтягивают базу команде"
+    button:
+      text_html: "Обсудить <span class=\"ph\">[КОНТАКТ]</span>"
+      href: "#"
+      primary: false
+    highlight: false

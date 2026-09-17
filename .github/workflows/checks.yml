@@ -1,0 +1,39 @@
+name: Проверки
+
+on:
+  pull_request:
+    branches: ["main"]
+  push:
+    branches-ignore: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Сборка без публикации
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Проверка обязательных файлов
+        run: |
+          set -e
+          test -f _site/index.html || { echo "нет index.html"; exit 1; }
+          test -f _site/assets/css/main.css || { echo "нет main.css"; exit 1; }
+          test -f _site/CNAME || { echo "нет CNAME"; exit 1; }
+          grep -q "devops.bukatchuk.ru" _site/CNAME
+          echo "Размер страницы: $(wc -c < _site/index.html) байт"
+
+      - name: Поиск незакрытых плейсхолдеров
+        run: |
+          if grep -o '\[[А-ЯЁ][А-ЯЁ ,/]*\]' _site/index.html | sort -u | tee /tmp/ph.txt | grep -q .; then
+            echo "На странице остались плейсхолдеры:"; cat /tmp/ph.txt
+          else
+            echo "Плейсхолдеров нет"
+          fi

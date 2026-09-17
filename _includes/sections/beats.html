@@ -1,0 +1,15 @@
+{%- assign d = site.data.beats -%}
+<section class="sec--line">
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <div class="sec__head">
+      <div><h2 class="rv">{{ d.title_html }}</h2></div>
+      <p class="rv">{{ d.lead }}</p>
+    </div>
+    <div class="beats">
+      {%- for b in d.items %}
+      <div class="beat rv"><p class="beat__q">{{ b.q }}</p><p class="beat__a">{{ b.a }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

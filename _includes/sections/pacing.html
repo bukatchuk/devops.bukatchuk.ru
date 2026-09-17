@@ -1,0 +1,22 @@
+{%- assign d = site.data.pacing -%}
+<section id="b6">
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <div class="sec__head">
+      <div><h2 class="rv">{{ d.title_html }}</h2></div>
+      <p class="rv">{{ d.lead }}</p>
+    </div>
+    <div class="stack">
+      {%- for s in d.steps %}
+      <article class="stack__c rv">
+        <div><div class="stack__step">{{ s.step }}</div><div class="stack__when">{{ s.when }}</div></div>
+        <div class="stack__b">
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.text }}</p>
+          <div class="tags">{% for t in s.tags %}<span class="tag{% if t.style == 'filled' %} tag--filled{% endif %}{% if t.style == 'safety' %} tag--safety{% endif %}">{{ t.text }}</span>{% endfor %}</div>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

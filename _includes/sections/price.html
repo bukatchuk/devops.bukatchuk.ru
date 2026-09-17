@@ -1,0 +1,14 @@
+{%- assign d = site.data.price -%}
+<section class="price" id="b8">
+  <div class="wrap">
+    <span class="blk blk--safety rv">{{ d.blk }}</span>
+    <div class="price__old rv">{{ d.old }}</div>
+    <div class="price__big rv">{{ d.big }}</div>
+    <p class="lead rv" style="opacity:.86">{{ d.lead }}</p>
+    <div class="save">
+      {%- for s in d.save %}
+      <div class="rv"><b>{{ s.value }}</b><span>{{ s.label }}</span></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

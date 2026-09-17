@@ -1,0 +1,12 @@
+{%- assign d = site.data.questions -%}
+<section class="sec--surface">
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <h2 class="rv">{{ d.title_html }}</h2>
+    <div class="q">
+      {%- for i in d.items %}
+      <div class="q__i rv">{{ i }}</div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

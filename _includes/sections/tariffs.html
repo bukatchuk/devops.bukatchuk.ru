@@ -1,0 +1,22 @@
+{%- assign d = site.data.tariffs -%}
+<section id="b13">
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <h2 class="rv">{{ d.title_html }}</h2>
+    <div class="tar">
+      {%- for c in d.cards %}
+      <div class="card{% if c.highlight %} card--hl{% endif %} rv">
+        <div class="card__tag">{{ c.tag }}</div>
+        <div class="card__p">{{ c.price }}<small>{{ c.note }}</small></div>
+        <ul>
+          {%- for i in c.items %}
+          <li{% if i.strike %} class="no"{% endif %}>{{ i.text }}</li>
+          {%- endfor %}
+        </ul>
+        <div class="card__who">{{ c.who }}</div>
+        <a class="btn {% if c.button.primary %}btn--primary{% else %}btn--ghost{% endif %}" href="{{ c.button.href }}">{{ c.button.text_html }}</a>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

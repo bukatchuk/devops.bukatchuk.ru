@@ -1,0 +1,11 @@
+{%- assign d = site.data.log -%}
+<div class="log" aria-label="{{ d.title }}">
+  <div class="log__hd"><div>{{ d.title }}</div><div>{{ d.subtitle }}</div></div>
+  <div class="log__body">
+    <div class="log__track">
+      {%- for n in (1..2) %}{% for e in d.entries %}
+      <div class="log__e"><span class="log__t">{{ e.time }}</span><span class="log__tag {{ e.level }}">{{ e.tag }}</span><span class="log__m">{{ e.text }}</span></div>
+      {%- endfor %}{% endfor %}
+    </div>
+  </div>
+</div>

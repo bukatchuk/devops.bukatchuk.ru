@@ -1,0 +1,30 @@
+{%- assign d = site.data.program -%}
+<section id="b4" class="sec--line">
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <div class="sec__head">
+      <div><h2 class="rv">{{ d.title_html }}</h2></div>
+      <p class="rv">{{ d.lead }}</p>
+    </div>
+    <div class="bento">
+      {%- for c in d.cards %}
+      <div class="bento-card{% if c.wide %} bento-card--wide{% endif %}{% if c.variant == 'dark' %} bento-card--dark{% endif %}{% if c.variant == 'safety' %} bento-card--safety{% endif %} rv">
+        <div class="bento-card__n">{{ c.n }}</div>
+        <div class="bento-card__t">{{ c.title_html }}</div>
+        <p class="bento-card__x">{{ c.text }}</p>
+        {%- if c.bars %}<div class="barchart" aria-hidden="true">{% for b in c.bars %}<i{% if b.hi %} class="hi"{% endif %} style="height:{{ b.h }}"></i>{% endfor %}</div>{% endif %}
+        {%- if c.stat %}<div class="bento-card__stat">{{ c.stat }}</div>{% endif %}
+        {%- if c.tags %}<div class="tags">{% for t in c.tags %}<span class="tag{% if t.style == 'filled' %} tag--filled{% endif %}{% if t.style == 'safety' %} tag--safety{% endif %}">{{ t.text }}</span>{% endfor %}</div>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    <div class="term rv">
+      <div class="term__bar"><i></i><i></i><i></i><span style="margin-left:.6rem">{{ d.terminal.title }}</span></div>
+      <div class="term__body">
+        {%- for p in d.terminal.paragraphs %}
+        <p>{{ p }}</p>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>

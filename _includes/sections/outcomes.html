@@ -1,0 +1,18 @@
+{%- assign d = site.data.outcomes -%}
+<section class="sec--line">
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <div class="sec__head">
+      <div><h2 class="rv">{{ d.title_html }}</h2></div>
+      <p class="rv">{{ d.lead }}</p>
+    </div>
+    <div class="specs">
+      {%- for i in d.items %}
+      <div class="spec{% if i.variant == 'dark' %} spec--dark{% endif %}{% if i.variant == 'safety' %} spec--safety{% endif %} rv">
+        <div><div class="spec__id">{{ i.id }}</div><div class="spec__label">{{ i.label }}</div></div>
+        <div><div class="spec__v">{{ i.value }}{% if i.unit %}<span class="spec__u">{{ i.unit }}</span>{% endif %}</div><div class="spec__note">{{ i.note }}</div></div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

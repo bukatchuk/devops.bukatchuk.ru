@@ -1,0 +1,15 @@
+# ——— Сайт ———
+title: "База, которую не придётся доучивать — путь в DevOps для тех, кто уже в ИТ"
+description: "197 уроков в том порядке, в котором это устроено на работе. От Linux, сетей и данных до Kubernetes и облака, с практикой на трёх стендах."
+url: "https://devops.bukatchuk.ru"
+baseurl: ""
+lang: ru
+
+# ——— Сборка ———
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+sass:
+  style: compressed

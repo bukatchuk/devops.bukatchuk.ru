@@ -1,0 +1,18 @@
+{%- assign d = site.data.reason -%}
+<section class="sec--line">
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <div class="sec__head">
+      <div><h2 class="rv">{{ d.title_html }}</h2></div>
+      <p class="rv">{{ d.lead }}</p>
+    </div>
+    <div class="guar">
+      {%- for c in d.cards %}
+      <div class="guar__i{% if c.highlight %} guar__i--hl{% endif %} rv"><b>{{ c.title }}</b>{{ c.text }}</div>
+      {%- endfor %}
+    </div>
+    {%- if d.cut %}
+    <div class="cut rv" data-label="{{ d.cut.label }}" style="color:var(--ink);opacity:1"><div class="cal__body">{{ d.cut.html }}</div></div>
+    {%- endif %}
+  </div>
+</section>

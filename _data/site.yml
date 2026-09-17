@@ -1,0 +1,17 @@
+# Раздел «site». Правится здесь, разметку трогать не нужно.
+logo_text: "bukatchuk"
+header_sub: "DevOps / базовый курс"
+header_status: "Набор открыт"
+nav:
+  - text: "Что входит"
+    href: "#b4"
+  - text: "Что будет"
+    href: "#b6"
+  - text: "Цена"
+    href: "#b8"
+  - text: "Гарантии"
+    href: "#b10"
+  - text: "Тарифы"
+    href: "#b13"
+  - text: "Начать"
+    href: "#b14"

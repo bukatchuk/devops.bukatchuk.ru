@@ -1,0 +1,22 @@
+{%- assign d = site.data.summary -%}
+<section class="sec--surface sec--line">
+  <div class="wrap">
+    <span class="blk rv">{{ d.blk }}</span>
+    <h2 class="rv">{{ d.title_html }}</h2>
+    {%- if d.lead2 and d.lead2 != '' %}<p class="lead rv">{{ d.lead2 }}</p>{% endif %}
+    <table class="sum rv">
+      <tbody>
+        {%- for r in d.rows %}
+        <tr{% if r.total %} class="total"{% endif %}>
+          <td>{{ r.text }}</td>
+          {%- if r.check %}
+          <td class="yes"><span class="check" aria-label="входит">✓</span></td>
+          {%- else %}
+          <td>{{ r.value }}</td>
+          {%- endif %}
+        </tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
