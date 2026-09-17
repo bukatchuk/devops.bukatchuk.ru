@@ -37,3 +37,16 @@ jobs:
           else
             echo "Плейсхолдеров нет"
           fi
+
+      - name: Сайт не должен обращаться к сторонним доменам
+        run: |
+          set -e
+          found=$(grep -roE '(src|href)="https?://[^"]+"' _site --include=*.html \
+            | grep -v 'rel="canonical"' \
+            | grep -oE 'https?://[^"]+' \
+            | grep -vE '^https://(devops\.)?bukatchuk\.ru' || true)
+          links=$(grep -roE 'url\(https?://[^)]+\)' _site --include=*.css || true)
+          if [ -n "$links" ]; then echo "В CSS есть внешние ресурсы:"; echo "$links"; exit 1; fi
+          echo "Внешних ресурсов в CSS нет"
+          test -d _site/assets/fonts || { echo "нет папки со шрифтами"; exit 1; }
+          echo "Шрифтов в сборке: $(ls _site/assets/fonts/*.woff2 | wc -l)"
