@@ -6,7 +6,7 @@ proof:
   - title: "Разбор реальной аварии"
     html: "<a href=\"https://habr.com/ru/articles/1078876/\" target=\"_blank\" rel=\"noopener\">«Все компоненты зелёные, а продакшн лежит»</a> — около десяти тысяч читателей на Хабре."
   - title: "Открытая программа"
-    html: "Двадцать блоков и 197 уроков с названиями видно до оплаты."
+    html: "<a href=\"/program/\">Двадцать два блока и 216 уроков с названиями</a> видно до оплаты."
   - title: "Код и интервью"
     html: "<a href=\"https://github.com/olegbukatchuk\" target=\"_blank\" rel=\"noopener\">github.com/olegbukatchuk</a> и интервью «Как хорошо больше не писать код» на «Мы обречены»."
   - title: "Отрасли"

@@ -8,7 +8,7 @@ rows:
     value: "99 000 ₽"
     check: false
     total: false
-  - text: "Отдельный курс по Kubernetes — один блок из двадцати"
+  - text: "Отдельный курс по Kubernetes — один блок из двадцати двух"
     value: "от 17 500 ₽"
     check: false
     total: false

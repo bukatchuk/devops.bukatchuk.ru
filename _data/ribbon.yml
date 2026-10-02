@@ -1,17 +1,17 @@
 # Раздел «ribbon». Правится здесь, разметку трогать не нужно.
 items:
   - label: "Блоков"
-    value: "20"
+    value: "22"
     unit: ~
     fill: "100%"
   - label: "Уроков"
-    value: "197"
+    value: "216"
     unit: ~
     fill: "100%"
   - label: "Базы до контейнера"
     value: "68"
     unit: "уроков"
-    fill: "35%"
+    fill: "31%"
   - label: "Среды практики"
     value: "3"
     unit: "стенда"

@@ -1,0 +1,18 @@
+---
+layout: page
+permalink: /program/
+title: Программа курса
+subtitle: 22 блока, 216 уроков
+description: Полное оглавление курса «База, которую не придётся доучивать» — все блоки и уроки с названиями.
+---
+{%- assign blocks = site.data.curriculum -%}
+<p>Каждый урок — 30 минут теории, 30 минут управляемой практики и домашняя работа на час-два. Практика в трёх средах: локальный стенд, VPS или bare-metal, Yandex Cloud.</p>
+{%- for b in blocks %}
+<h2 id="block-{{ b.id }}">{{ b.id }}. {{ b.title }}</h2>
+<p>{{ b.goal }}</p>
+<ul>
+{%- for l in b.lessons %}
+  <li><strong>{{ l.id }}.</strong> {{ l.title }}</li>
+{%- endfor %}
+</ul>
+{%- endfor %}
