@@ -1,7 +1,7 @@
 # Раздел «footer»
 columns:
   - title: "Курс"
-    html: "<p><a href=\"/#b4\">Что входит</a><br><a href=\"/program/\">Программа</a><br><a href=\"/#b6\">Год по шагам</a><br><a href=\"/#b10\">Гарантии</a><br><a href=\"/#b13\">Тарифы</a></p>"
+    html: "<p><a href=\"/#b4\">Что входит</a><br><a href=\"/#b6\">Год по шагам</a><br><a href=\"/program/\">Программа</a><br><a href=\"/#b10\">Гарантии</a><br><a href=\"/#b13\">Тарифы</a></p>"
   - title: "Автор"
     html: "<p><a href=\"https://habr.com/ru/articles/1078876/\" target=\"_blank\" rel=\"noopener\">Разбор аварии на Хабре</a><br><a href=\"https://github.com/olegbukatchuk\" target=\"_blank\" rel=\"noopener\">github.com/olegbukatchuk</a><br><a href=\"https://t.me/bukatchuk\" target=\"_blank\" rel=\"noopener\">t.me/bukatchuk</a></p>"
   - title: "Документы"
