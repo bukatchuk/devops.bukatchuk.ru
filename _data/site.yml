@@ -5,6 +5,8 @@ header_status: "Набор открыт"
 nav:
   - text: "Что входит"
     href: "#b4"
+  - text: "Программа"
+    href: "/program/"
   - text: "Что будет"
     href: "#b6"
   - text: "Цена"

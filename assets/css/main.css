@@ -194,6 +194,8 @@ h3{font-family:var(--grotesk);font-size:var(--fs-h3);font-weight:700;line-height
 .hdr__sub{font-size:var(--fs-micro);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
 .hdr__nav{margin-left:auto;display:flex;gap:1.3rem;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase}
 .hdr__nav a:hover{color:var(--safety)}
+.hdr__nav a{white-space:nowrap}
+@media (max-width:1280px){.hdr__sub,.hdr__sep,.hdr__clock{display:none}}
 .hdr__right{display:flex;align-items:center;gap:1rem;margin-left:1.2rem}
 .hdr__status{display:flex;align-items:center;gap:.4rem;font-size:var(--fs-micro);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
 .dot{width:7px;height:7px;border-radius:50%;background:var(--term-green);box-shadow:0 0 8px var(--term-green);animation:pulse 2s infinite}

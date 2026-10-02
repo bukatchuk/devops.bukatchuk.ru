@@ -8,7 +8,7 @@
     <span class="hdr__sep"></span>
     <span class="hdr__sub">{{ s.header_sub }}</span>
     <nav class="hdr__nav" id="nav">
-      {%- for l in s.nav %}<a href="{% unless page.url == '/' %}/{% endunless %}{{ l.href }}">{{ l.text }}</a>{% endfor %}
+      {%- for l in s.nav %}{%- assign first = l.href | slice: 0 -%}<a href="{% if first == '#' and page.url != '/' %}/{% endif %}{{ l.href }}">{{ l.text }}</a>{% endfor %}
     </nav>
     <div class="hdr__right">
       <div class="hdr__status"><span class="dot"></span><span>{{ s.header_status }}</span></div>
